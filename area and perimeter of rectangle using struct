@@ -1,0 +1,22 @@
+#include <stdio.h>
+struct rect{
+    int a;
+    int p;
+};
+struct rect area_perim(int,int);
+int main()
+{
+    int l=2,b=3;
+    struct rect result;
+    result=area_perim(l,b);
+    printf("area is %d",result.a);
+    printf("perimeter is %d",result.p);
+    return 0;
+}
+struct rect area_perim(int l,int b)
+{
+    struct rect s;
+    s.a=l*b;
+    s.p=l+l+b+b;
+    return s;
+}
