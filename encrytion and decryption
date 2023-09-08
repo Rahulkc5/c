@@ -1,0 +1,22 @@
+#include <stdio.h>
+char map_table[26];
+int main()
+{
+    char input,temp,ch_tx,ch_rx;
+    int index,n;
+    temp='Z';
+    for(n=0;n<26;n++)
+    map_table[n]=temp;
+    printf("enter the character to be transmitted \n");
+    scanf("%c",&input);
+    index=input-'A';
+    ch_tx=map_table[index];
+    printf("transmitted character is %c",ch_tx);
+    ch_rx=ch_tx;
+    printf("recieved character is %c",ch_tx);
+    for(n=0;n<26;n++)
+    if(ch_rx==map_table[n])
+    break;
+    printf("decrypted character is %c",'A'+n);
+    return 0;
+}
