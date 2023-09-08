@@ -1,0 +1,18 @@
+include <stdio.h>
+#include <string.h>
+
+int main()
+{
+    char ch[10];
+    printf("enter the word\n");
+    scanf("%s", ch);
+    char fch = ch[0];
+    printf("first letter of word is %c", fch);
+
+    if (fch == 'a' || fch == 'A' || fch == 'e' || fch == 'E' || fch == 'i' || fch == 'I' || fch == 'o' || fch == 'O' || fch == 'u' || fch == 'U')
+        printf(" is a vowel \n");
+    else
+        printf(" is a consonant \n");
+
+    return 0;
+}
