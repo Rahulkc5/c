@@ -6,7 +6,7 @@ int main()
     int index,n;
     temp='Z';
     for(n=0;n<26;n++)
-    map_table[n]=temp;
+    map_table[n]=temp--;
     printf("enter the character to be transmitted \n");
     scanf("%c",&input);
     index=input-'A';
