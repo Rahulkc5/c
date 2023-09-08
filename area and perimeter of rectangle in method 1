@@ -1,0 +1,17 @@
+#include <stdio.h>
+int area_perim(int,int,int*);
+int main()
+{
+    int l=2,b=3;
+    int area;
+    int perim;
+    area=area_perim(l,b,&perim);
+    printf("area is %d",area);
+    printf("perimeter is %d",perim);
+    return 0;
+}
+int area_perim(int l,int b,int*perim)
+{
+    *perim=l+l+b+b;
+    return l*b;
+}
